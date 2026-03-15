@@ -4,195 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glow Collective - Your Curated Beauty Ritual</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <a href="index.html" class="logo">
-            Glow
-            <span class="logo-subtitle">Collective</span>
+            <span class="logo-main">GLOW</span>
+            <span class="logo-sub">COLLECTIVE</span>
         </a>
         
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="src/pages/shop.html">Shop</a></li>
-            <li><a href="src/pages/blog.html">Blog</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="src/pages/shop.html">SHOP</a></li>
+            <li><a href="src/pages/blog.html">BLOG</a></li>
         </ul>
         
         <div class="nav-icons">
-            <input type="text" class="search-bar" placeholder="Search...">
-            <div class="icon" title="Search"></div>
-            <div class="icon" title="Cart"></div>
-            <div class="icon" title="Profile"></div>
+            <div class="search-wrapper">
+                <input type="text" class="search-bar" placeholder="">
+                <svg class="search-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <a href="#" class="icon-link" aria-label="Profile">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </a>
+            <a href="#" class="icon-link" aria-label="Cart">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text-wrapper">
                 <h1>Your Curated<br>Beauty Ritual.</h1>
                 <div class="hero-btn-container">
-                    <a href="shop.html" class="btn">SHOP NOW</a>
+                    <a href="src/pages/shop.html" class="btn">SHOP NOW</a>
                 </div>
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1718005735424-eb1a8b861f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBtb2RlbCUyMHBvcnRyYWl0JTIwbmF0dXJhbHxlbnwxfHx8fDE3NzM1NDgxODh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Beauty Model">
+            <img src="src/images/model.png" alt="Beauty Model">
         </div>
     </section>
 
-    <!-- Categories Section -->
     <section class="categories">
         <div class="category-grid">
             <div class="category-item">
-                <div class="category-icon">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="8" fill="currentColor"/>
-                    </svg>
-                </div>
-                <p class="category-name">Fragrances</p>
+                <svg class="cat-icon" viewBox="0 0 24 24"><path d="M12 2v4M8 6h8M6 10l-2 8a2 2 0 002 2h12a2 2 0 002-2l-2-8H6z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                <p class="category-name">FRAGRANCES</p>
             </div>
-            
             <div class="category-item">
-                <div class="category-icon">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="8" fill="currentColor"/>
-                    </svg>
-                </div>
-                <p class="category-name">Eyes</p>
+                <svg class="cat-icon" viewBox="0 0 24 24"><path d="M7 22v-8c0-2 4-2 4 0v8H7zM15 2v10M12 7h6M12 4h6M12 10h6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                <p class="category-name">EYES</p>
             </div>
-            
             <div class="category-item">
-                <div class="category-icon">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="8" fill="currentColor"/>
-                    </svg>
-                </div>
-                <p class="category-name">Palettes</p>
+                <svg class="cat-icon" viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="10" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M5 10l2-6h10l2 6M7 14h2M11 14h2M15 14h2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                <p class="category-name">PALETTES</p>
             </div>
-            
             <div class="category-item">
-                <div class="category-icon">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="8" fill="currentColor"/>
-                    </svg>
-                </div>
-                <p class="category-name">Lips</p>
+                <svg class="cat-icon" viewBox="0 0 24 24"><rect x="8" y="12" width="8" height="10" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M10 12V7c0-1.5 4-1.5 4 0v5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                <p class="category-name">LIPS</p>
             </div>
-            
             <div class="category-item">
-                <div class="category-icon">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="8" fill="currentColor"/>
-                    </svg>
-                </div>
-                <p class="category-name">Face</p>
+                <svg class="cat-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+                <p class="category-name">FACE</p>
             </div>
         </div>
     </section>
 
-    <!-- Brand Row Section -->
     <section class="brands">
         <div class="brand-row">
-            <span class="brand-name">FENTY BEAUTY</span>
-            <span class="brand-separator"></span>
-            <span class="brand-name">Glossier</span>
-            <span class="brand-separator"></span>
-            <span class="brand-name">The Ordinary</span>
-            <span class="brand-separator"></span>
-            <span class="brand-name">Rare Beauty</span>
+            <span class="brand-fenty">F E N T Y &nbsp; B E A U T Y</span>
+            <span class="brand-dot"></span>
+            <span class="brand-glossier">Glossier.</span>
+            <span class="brand-dot"></span>
+            <span class="brand-ordinary">The <strong>Ordinary.</strong></span>
+            <span class="brand-dot"></span>
+            <span class="brand-rare">Rare Beauty</span>
         </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section class="products">
-        <h2 class="section-title">Featured Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1643379850623-7eb6442cd262?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxza2luY2FyZSUyMHNlcnVtJTIwYm90dGxlfGVufDF8fHx8MTc3MzQ0MTQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product" class="product-image">
-                <div class="product-info">
-                    <p class="product-brand">The Ordinary</p>
-                    <h3 class="product-name">AHA 30% + BHA 2% Peeling Solution</h3>
-                    <p class="product-price">PHP 950.00</p>
-                    <a href="#" class="btn">Add to Bag</a>
-                </div>
+    <section class="featured-section">
+        <div class="featured-container">
+            
+            <div class="ad-banner">
+                <img src="src/images/dior-ad.gif" alt="Dior Stand Out In Color">
             </div>
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1648208567967-19e0b7b10066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJmdW1lJTIwZnJhZ3JhbmNlJTIwYm90dGxlfGVufDF8fHx8MTc3MzQ5MjkwNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product" class="product-image">
-                <div class="product-info">
-                    <p class="product-brand">Fenty Beauty</p>
-                    <h3 class="product-name">FENTY EAU DE PARFUM 75 ml.</h3>
-                    <p class="product-price">PHP 10,500.00</p>
-                    <a href="#" class="btn">Add to Bag</a>
+            <div class="product-showcase">
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="src/images/ordinary-peeling.jpg" alt="The Ordinary">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">The Ordinary</p>
+                        <h3 class="product-name">AHA 30% + BHA 2%<br>Peeling Solution</h3>
+                        <p class="product-price">PHP 850.00</p>
+                        <a href="#" class="btn-bag">ADD TO BAG</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1587055682234-853183f4523c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXBzdGljayUyMG1ha2V1cCUyMGJlYXV0eXxlbnwxfHx8fDE3NzM0NjQ0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product" class="product-image">
-                <div class="product-info">
-                    <p class="product-brand">Rare Beauty</p>
-                    <h3 class="product-name">Soft Pinch Liquid Blush</h3>
-                    <p class="product-price">PHP 1,600.00</p>
-                    <a href="#" class="btn">Add to Bag</a>
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="src/images/fenty-perfume.jpg" alt="Fenty Perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Fenty Beauty</p>
+                        <h3 class="product-name">FENTY EAU DE<br>PARFUM 75 mL</h3>
+                        <p class="product-price">PHP 10,800.00</p>
+                        <a href="#" class="btn-bag">ADD TO BAG</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="src/images/rare-blush.jpeg" alt="Rare Beauty Blush">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Rare Beauty</p>
+                        <h3 class="product-name">Soft Pinch Liquid<br>Blush</h3>
+                        <p class="product-price">PHP 1,600.00</p>
+                        <a href="#" class="btn-bag">ADD TO BAG</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Preview Section -->
     <section class="blog-section">
-        <h2 class="section-title">Beauty Blogs to Read</h2>
-        <div class="blog-grid">
-            <article class="blog-card">
-                <img src="https://images.unsplash.com/photo-1614159102369-effd79eadadd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxza2luY2FyZSUyMHJvdXRpbmUlMjBiZWF1dHl8ZW58MXx8fHwxNzczNTQ4MTg5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Summer Skin" class="blog-image">
-                <div class="blog-content">
-                    <h3 class="blog-title">Summer Skin Decoded</h3>
-                    <p class="blog-excerpt">Discover the essential skincare tips for maintaining radiant, healthy skin throughout the summer months.</p>
-                    <a href="blog.html" class="read-more">Read More →</a>
-                </div>
-            </article>
+        <div class="blog-section-inner">
+            <h2 class="section-title left-align">Beauty Blogs to Read</h2>
+            <div class="blog-container">
+                
+                <div class="blog-list">
+                    <article class="blog-card-horizontal">
+                        <img src="https://images.unsplash.com/photo-1614159102369-effd79eadadd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxza2luY2FyZSUyMHJvdXRpbmUlMjBiZWF1dHl8ZW58MXx8fHwxNzczNTQ4MTg5fDA&ixlib=rb-4.1.0&q=80&w=500" alt="Summer Skin" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="blog-title">Summer Skin Decoded</h3>
+                            <a href="src/pages/blog.html" class="read-more">READ MORE</a>
+                        </div>
+                    </article>
 
-            <article class="blog-card">
-                <img src="https://images.unsplash.com/photo-1600637070413-0798fafbb6c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYWtldXAlMjBhcnRpc3R8ZW58MXx8fHwxNzczNTQ4MTg5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="MUA Techniques" class="blog-image">
-                <div class="blog-content">
-                    <h3 class="blog-title">Professional MUA Techniques</h3>
-                    <p class="blog-excerpt">Learn the secrets from professional makeup artists to elevate your everyday makeup routine.</p>
-                    <a href="blog.html" class="read-more">Read More →</a>
+                    <article class="blog-card-horizontal">
+                        <img src="https://images.unsplash.com/photo-1600637070413-0798fafbb6c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYWtldXAlMjBhcnRpc3R8ZW58MXx8fHwxNzczNTQ4MTg5fDA&ixlib=rb-4.1.0&q=80&w=500" alt="MUA Techniques" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="blog-title">Professional MUA Techniques</h3>
+                            <a href="src/pages/blog.html" class="read-more">READ MORE</a>
+                        </div>
+                    </article>
                 </div>
-            </article>
+
+                <div class="blog-ad">
+                    <img src="src/images/dior-ad-square.gif" alt="Dior Ad">
+                </div>
+                
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-column">
-                <h3>About</h3>
-                <div class="footer-logo">GLOW<br>COLLECTIVE</div>
-                <p class="footer-tagline">Elevate your essence. Simplify your ritual.</p>
+                <h3 class="footer-heading">ABOUT:</h3>
+                <div class="footer-logo">
+                    <span class="logo-main-white">GLOW</span>
+                    <span class="logo-sub-white">COLLECTIVE</span>
+                </div>
+                <p class="footer-tagline">Elevate your essence.<br>Simplify your ritual.</p>
                 <div class="social-icons">
-                    <div class="social-icon"></div>
-                    <div class="social-icon"></div>
-                    <div class="social-icon"></div>
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.5z"></path></svg>
                 </div>
             </div>
 
             <div class="footer-column">
-                <h3>Explore</h3>
+                <h3 class="footer-heading">EXPLORE:</h3>
                 <ul>
-                    <li><a href="shop.html">New Arrivals</a></li>
-                    <li><a href="shop.html">Best Sellers</a></li>
-                    <li><a href="shop.html">Gifting</a></li>
-                    <li><a href="shop.html">Sale</a></li>
+                    <li><a href="src/pages/shop.html">New Arrivals</a></li>
+                    <li><a href="src/pages/shop.html">Best Sellers</a></li>
+                    <li><a href="src/pages/shop.html">Gifting</a></li>
+                    <li><a href="src/pages/shop.html">Sale</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
-                <h3>Help</h3>
+                <h3 class="footer-heading">HELP:</h3>
                 <ul>
                     <li><a href="#">Customer Service</a></li>
                     <li><a href="#">Shipping & Returns</a></li>
@@ -203,19 +201,14 @@
             </div>
 
             <div class="footer-column">
-                <h3>Legal & Credits</h3>
+                <h3 class="footer-heading">LEGAL & CREDITS:</h3>
                 <ul>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">© 2026 Glow Collective</a></li>
-                    <li><a href="#">All Rights Reserved</a></li>
+                    <li><a href="#">© 2026 Glow Collective</a><br><a href="#">All Rights Reserved</a></li>
+                    <li class="margin-top"><a href="#">Copyright Credit</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>Copyright Credit</p>
         </div>
     </footer>
 </body>
